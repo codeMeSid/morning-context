@@ -7,7 +7,7 @@ interface Props {
   children: React.ReactNode;
 }
 
-const LayoutContainer = (props: Props) => {
+const StyledLayoutContainer = (props: Props) => {
   return (
     <Container
       disableGutters
@@ -17,8 +17,9 @@ const LayoutContainer = (props: Props) => {
       <StyledTopNavbar />
       <Box
         sx={(theme) => ({
-          height: `calc(100vh - ${theme.spacing(7)})`,
+          height: `calc(100vh - ${theme.spacing(7.5)})`,
           bgcolor: theme.palette.background.default,
+          overflowY: "scroll",
         })}
       >
         {props.children}
@@ -27,4 +28,4 @@ const LayoutContainer = (props: Props) => {
   );
 };
 
-export default LayoutContainer;
+export default StyledLayoutContainer;

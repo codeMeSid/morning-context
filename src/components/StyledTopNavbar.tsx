@@ -1,9 +1,8 @@
 "use client";
-import { Box, Button, IconButton, Typography } from "@mui/material";
-import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import StyledButton from "../StyledButton";
+import { Box, IconButton, Typography } from "@mui/material";
+import StyledButton from "./StyledButton";
 
 const StyledTopNavbar = () => {
   return (
