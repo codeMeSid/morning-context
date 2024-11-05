@@ -4,31 +4,31 @@ export const LIVE_NEWS_LIST = [
   {
     isBreakingNews: false,
     postedDateTime: dateFns.subMinutes(new Date(), 25),
-    title:
+    newsTitle:
       "Russian Navy's warship is either floating abandoned or at the bottom of the Black Sea",
   },
   {
     isBreakingNews: true,
     postedDateTime: dateFns.subMinutes(new Date(), 25),
-    title:
+    newsTitle:
       "Russian Navy's warship is either floating abandoned or at the bottom of the Black Sea",
   },
   {
     isBreakingNews: false,
     postedDateTime: dateFns.subMinutes(new Date(), 25),
-    title:
+    newsTitle:
       "Russian Navy's warship is either floating abandoned or at the bottom of the Black Sea",
   },
   {
     isBreakingNews: true,
     postedDateTime: dateFns.subMinutes(new Date(), 25),
-    title:
+    newsTitle:
       "Russian Navy's warship is either floating abandoned or at the bottom of the Black Sea",
   },
   {
     isBreakingNews: false,
     postedDateTime: dateFns.subMinutes(new Date(), 25),
-    title:
+    newsTitle:
       "Russian Navy's warship is either floating abandoned or at the bottom of the Black Sea",
   },
 ];

@@ -4,7 +4,7 @@ import { Box, Paper, Typography } from "@mui/material";
 interface Props {
   isBreakingNews: boolean;
   postedDateTime: Date;
-  title: string;
+  newsTitle: string;
 }
 
 const StyledMiniNewsCard = (props: Props) => {
@@ -56,7 +56,7 @@ const StyledMiniNewsCard = (props: Props) => {
           fontSize: theme.spacing(1.6),
         })}
       >
-        {props.title}
+        {props.newsTitle}
       </Typography>
     </Paper>
   );
