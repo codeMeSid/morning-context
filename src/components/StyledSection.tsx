@@ -1,5 +1,4 @@
-import { Theme } from "@emotion/react";
-import { Box, Palette, SxProps } from "@mui/material";
+import { Box, Palette } from "@mui/material";
 import React from "react";
 
 interface Props {

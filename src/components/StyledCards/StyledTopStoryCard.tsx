@@ -50,6 +50,7 @@ const StyledTopStoryCard = (props: Props) => {
           <Image
             fill
             objectFit="cover"
+            placeholder="empty"
             alt={props.newsTitle}
             src={props.newsImageSrc}
           />

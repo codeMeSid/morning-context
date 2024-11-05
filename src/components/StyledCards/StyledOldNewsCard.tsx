@@ -15,15 +15,15 @@ const StyledOldNewsCard = (props: Props) => {
       sx={(theme) => ({
         width: "100%",
         bgcolor: "#F3F5FF",
+        minHeight: theme.spacing(22),
         padding: theme.spacing(1.5, 3),
-        height: theme.spacing(22),
         borderLeft: `4px solid ${NEWS_SEVERITY_COLOR[newsSeverity]}`,
       })}
     >
       <Typography
         sx={(theme) => ({
-          fontSize: theme.spacing(2.25),
           fontWeight: "bold",
+          fontSize: theme.spacing(2.25),
           lineHeight: theme.spacing(3),
         })}
       >

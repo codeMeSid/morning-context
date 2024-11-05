@@ -2,6 +2,7 @@
 import { Box, Container } from "@mui/material";
 import React from "react";
 import StyledTopNavbar from "./StyledTopNavbar";
+import StyledFooter from "./StyledFooter";
 
 interface Props {
   children: React.ReactNode;
@@ -23,6 +24,7 @@ const StyledLayoutContainer = (props: Props) => {
         })}
       >
         {props.children}
+        <StyledFooter />
       </Box>
     </Container>
   );
