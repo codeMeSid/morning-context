@@ -1,11 +1,10 @@
+import StyledLayoutContainer from "@/components/StyledLayoutContainer";
 import { customTheme } from "@/utils/customTheme";
-import { Box } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { ThemeProvider } from "@mui/material/styles";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import StyledLayoutContainer from "@/components/StyledLayoutContainer";
 
 const matteoRegular = localFont({
   src: "./fonts/Matteo-Regular.ttf",

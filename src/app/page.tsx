@@ -40,7 +40,7 @@ export default function HomePage() {
       </StyledSection>
       <StyledSection id="today-edition-section">
         <Typography variant="h4" textAlign="center">
-          Today's Edition
+          {"Today's Edition"}
         </Typography>
         <Box
           component="section"
@@ -54,6 +54,15 @@ export default function HomePage() {
           {TODAY_NEWS_LIST.map((newsItem, newsItemIndex) => {
             return <StyledNewsCard key={newsItemIndex} {...newsItem} />;
           })}
+        </Box>
+        <Box
+          sx={(theme) => ({
+            width: "100%",
+            display: "flex",
+            marginTop: theme.spacing(5),
+          })}
+        >
+          <StyledButton fullWidth title="view all stories" />
         </Box>
       </StyledSection>
       <StyledSection id="yesterday-news-section">
@@ -105,6 +114,15 @@ export default function HomePage() {
             <StyledOldNewsCard key={newsItemIndex} {...newsItem} />
           ))}
         </Box>
+        <Box
+          sx={(theme) => ({
+            width: "100%",
+            display: "flex",
+            marginTop: theme.spacing(5),
+          })}
+        >
+          <StyledButton fullWidth title="read more" />
+        </Box>
       </StyledSection>
       <Box
         id="section-wrapper"
@@ -137,8 +155,9 @@ export default function HomePage() {
             variant="body2"
             textAlign="center"
           >
-            A wealth of knowledge from India's top writers curated for you by
-            The Morning Context.
+            {
+              "A wealth of knowledge from India's top writers curated for you by The Morning Context."
+            }
           </Typography>
           <Box
             component="section"

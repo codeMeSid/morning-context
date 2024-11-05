@@ -1,11 +1,10 @@
 import { SvgIconTypeMap } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
-import React from "react";
 
 interface Props {
   id: string;
   rotateAngle: number;
-  Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & {
+  Icon: OverridableComponent<SvgIconTypeMap<object, "svg">> & {
     muiName: string;
   };
   colorList: { color: string; coverPercentage: string }[];
