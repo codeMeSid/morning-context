@@ -13,59 +13,10 @@ const StyledHeroTitleContainer = () => {
         padding: theme.spacing(4, 2),
       })}
     >
-      {/* <Box
-        id="center-circle"
-        sx={(theme) => ({
-          top: "50%",
-          left: "50%",
-          opacity: 0.4,
-          borderRadius: "50%",
-          position: "absolute",
-          width: theme.spacing(52),
-          height: theme.spacing(52),
-          transform: "translate(-50%,-50%)",
-          zIndex: 1,
-          background:
-            "linear-gradient(90deg, #55C79A 0%, #907CFF 52.08%, #FC876D 100%)",
-        })}
-      /> */}
-      {/* <Box
-        id="right-circle"
-        sx={(theme) => ({
-          top: "50%",
-          right: "25%",
-          opacity: 0.4,
-          borderRadius: "50%",
-          position: "absolute",
-          width: theme.spacing(52),
-          height: theme.spacing(52),
-          transform: "translate(-50%,-50%)",
-          zIndex: 1,
-          background:
-            "linear-gradient(90deg, #55C79A 0%, #907CFF 52.08%, #FC876D 100%)",
-        })}
-      /> */}
-      {/* <Box
-        id="left-circle"
-        sx={(theme) => ({
-          top: "50%",
-          left: "25%",
-          opacity: 0.4,
-          borderRadius: "50%",
-          position: "absolute",
-          width: theme.spacing(52),
-          height: theme.spacing(52),
-          transform: "translate(-50%,-50%)",
-          zIndex: 1,
-          background:
-            "linear-gradient(90deg, #55C79A 0%, #907CFF 52.08%, #FC876D 100%)",
-        })}
-      /> */}
-
       <Box
         component="fieldset"
         sx={(theme) => ({
-          zIndex: 5,
+          zIndex: 4,
           height: "100%",
           textAlign: "center",
           border: `2px solid ${theme.palette.common.white}`,
@@ -87,9 +38,10 @@ const StyledHeroTitleContainer = () => {
         <Typography
           variant="h6"
           sx={(theme) => ({
-            color: theme.palette.common.white,
+            fontWeight: 900,
             marginTop: theme.spacing(-1),
             marginBottom: theme.spacing(1),
+            color: theme.palette.common.white,
           })}
         >
           The Morning Context makes you smarter with original, accurate and

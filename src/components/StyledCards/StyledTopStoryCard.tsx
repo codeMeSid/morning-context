@@ -1,7 +1,6 @@
-import { Avatar, Box, Divider, Grid2, Typography } from "@mui/material";
-import Image from "next/image";
-import React from "react";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
+import { Avatar, Box, Divider, Grid2, Typography } from "@mui/material";
+import StyledImage from "../StyledImage";
 
 interface Props {
   newsCategory: string;
@@ -40,21 +39,12 @@ const StyledTopStoryCard = (props: Props) => {
         >
           {props.newsCategory}
         </Typography>
-        <Box
-          sx={(theme) => ({
-            position: "relative",
-            height: theme.spacing(18),
-            width: theme.spacing(31.75),
-          })}
-        >
-          <Image
-            fill
-            objectFit="cover"
-            placeholder="empty"
-            alt={props.newsTitle}
-            src={props.newsImageSrc}
-          />
-        </Box>
+        <StyledImage
+          height={18}
+          width={31.75}
+          alt={props.newsTitle}
+          src={props.newsImageSrc}
+        />
         <Typography
           variant="h6"
           sx={(theme) => ({
@@ -97,6 +87,7 @@ const StyledTopStoryCard = (props: Props) => {
             sx={(theme) => ({
               color: theme.palette.grey[700],
               marginLeft: theme.spacing(-0.5),
+              fontSize: theme.spacing(1.75),
             })}
           >
             {props.commentsCount}

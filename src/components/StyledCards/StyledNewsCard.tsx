@@ -1,9 +1,9 @@
-import { Avatar, Box, Divider, Grid2, Typography } from "@mui/material";
-import Image from "next/image";
-import React from "react";
-import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
-import { purple } from "@mui/material/colors";
 import { NEWS_CATEGORY_COLOR } from "@/utils/constants";
+import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
+import { Avatar, Box, Divider, Grid2, Typography } from "@mui/material";
+import { purple } from "@mui/material/colors";
+import React from "react";
+import StyledImage from "../StyledImage";
 
 interface Props {
   newsCategory: string;
@@ -29,29 +29,22 @@ const StyledNewsCard = (props: Props) => {
         {props.newsCategory}
       </Typography>
       {!props.isShort && (
-        <Box
-          sx={(theme) => ({
-            width: "100%",
-            position: "relative",
-            height: theme.spacing(25),
-            marginBottom: theme.spacing(2),
-          })}
-        >
-          <Image
-            fill
-            objectFit="cover"
-            placeholder="empty"
-            alt={props.newsTitle}
-            src={props.newsImageSrc}
-          />
-        </Box>
+        <StyledImage
+          height={25}
+          alt={props.newsTitle}
+          src={props.newsImageSrc}
+          sx={(theme) => ({ marginBottom: theme.spacing(2) })}
+        />
       )}
-      <Typography variant="h6">{props.newsTitle}</Typography>
+      <Typography variant="h6" sx={(theme) => ({ fontSize: theme.spacing(3) })}>
+        {props.newsTitle}
+      </Typography>
       {!props.isShort && (
         <Typography
           variant="subtitle1"
           sx={(theme) => ({
             marginTop: theme.spacing(1),
+            fontSize: theme.spacing(1.75),
           })}
         >
           {props.newsSnippet}
@@ -93,6 +86,7 @@ const StyledNewsCard = (props: Props) => {
               variant="body2"
               sx={(theme) => ({
                 color: theme.palette.grey[700],
+                fontSize: theme.spacing(1.75),
               })}
             >
               {props.newsReadDuration} min read
@@ -113,6 +107,7 @@ const StyledNewsCard = (props: Props) => {
           sx={(theme) => ({
             color: theme.palette.grey[700],
             marginLeft: theme.spacing(-0.5),
+            fontSize: theme.spacing(1.75),
           })}
         >
           {props.commentsCount}

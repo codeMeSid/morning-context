@@ -1,5 +1,5 @@
 import { calculateDateTimeDifference } from "@/utils/calculateDateTimeDifference";
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Typography } from "@mui/material";
 
 interface Props {
   isBreakingNews: boolean;
@@ -10,7 +10,8 @@ interface Props {
 const StyledMiniNewsCard = (props: Props) => {
   const { isBreakingNews } = props;
   return (
-    <Box
+    <Paper
+      variant="outlined"
       sx={(theme) => ({
         cursor: "pointer",
         width: theme.spacing(35),
@@ -47,17 +48,17 @@ const StyledMiniNewsCard = (props: Props) => {
       <Typography
         sx={(theme) => ({
           fontWeight: "bold",
-          fontSize: theme.spacing(1.5),
-          height: theme.spacing(6.5),
           whiteSpace: "wrap",
           overflow: "hidden",
           textOverflow: "ellipsis",
+          height: theme.spacing(6.5),
           marginTop: theme.spacing(1),
+          fontSize: theme.spacing(1.6),
         })}
       >
         {props.title}
       </Typography>
-    </Box>
+    </Paper>
   );
 };
 

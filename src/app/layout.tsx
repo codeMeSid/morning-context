@@ -9,13 +9,13 @@ import "./globals.css";
 const matteoRegular = localFont({
   src: "./fonts/Matteo-Regular.ttf",
   variable: "--font-matteo-regular",
-  weight: "100 900",
+  weight: "100 200 300 400 500 600 700 800 900",
 });
 
 const playfairFont = localFont({
   src: "./fonts/PlayfairDisplay-Black.woff",
   variable: "--font-playfair",
-  weight: "100 900",
+  weight: "100 200 300 400 500 600 700 800 900",
 });
 
 export const metadata: Metadata = {
